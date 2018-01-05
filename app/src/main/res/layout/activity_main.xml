@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sjjkk.datastructurework.MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/search_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/search_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Search"></Button>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:scrollbars="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/pic_1"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:src="@color/colorAccent" />
+
+                    <ImageView
+                        android:id="@+id/pic_2"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:src="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:id="@+id/pic_3"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:src="@color/colorPrimary" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:layout_margin="7dp"
+                android:padding="5dp"
+                android:text="LOG"
+                android:id="@+id/log"
+                android:textSize="20sp"
+                android:background="#e1e1e1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/to_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="题目2" />
+            <Button
+                android:id="@+id/asl_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ASL" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
